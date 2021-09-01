@@ -42,7 +42,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
   res.status(200).json("File has been uploaded");
 });
 
-app.get("/", (res, req) => {
+app.get("/", (req , res) => {
   res.send("api iurban Radio")
 })
 

@@ -14,7 +14,7 @@ require("./database");
 
 const app = express();
 app.use(morgan("dev"));
-app.set("port", 4000);
+app.set("port", process.env.PORT || 4000);
 
 //static file
 app.use("/images", express.static(path.join(__dirname, "/images")));
